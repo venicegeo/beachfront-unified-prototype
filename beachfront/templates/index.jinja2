@@ -1,0 +1,8 @@
+<body>
+<script>
+    sessionStorage.clear()
+    sessionStorage.fromOrigin = 1
+    console.assert(sessionStorage.fromOrigin, 'beacon is set')
+</script>
+<script src="{{assets_baseurl}}/build.js"></script>
+</body>

@@ -1,0 +1,7 @@
+beachfront/static
+beachfront.zip
+node_modules
+npm-debug.log
+__pycache__
+*.pyc
+.virtualenv
