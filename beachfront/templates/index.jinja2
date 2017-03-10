@@ -1,8 +1,10 @@
 <body>
-<script>
-    sessionStorage.clear()
-    sessionStorage.fromOrigin = 1
-    console.assert(sessionStorage.fromOrigin, 'beacon is set')
-</script>
+{% if api_key %}
+    <h3 style="background-color: green">You logged in!</h3>
+    <script>
+        sessionStorage.setItem('apiKey', '{{api_key}}')
+    </script>
+{% endif %}
+
 <script src="{{assets_baseurl}}/build.js"></script>
 </body>
