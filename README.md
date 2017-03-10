@@ -4,7 +4,7 @@ This is a proof of concept showing what the repo structure and build process wou
 
 ```bash
 
-# develop (visit http://localhost:5000 in browser)
+# develop (visit http://localhost:8080 in browser)
 ./scripts/install-dependencies.sh
 ./scripts/run-in-development-mode.sh
 

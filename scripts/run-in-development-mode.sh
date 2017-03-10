@@ -4,10 +4,14 @@ CMD=$(basename $BASH_SOURCE)
 
 . .virtualenv/bin/activate
 
-FLASK_APP=beachfront/__init__.py FLASK_DEBUG=1 STATIC_BASEURL=http://localhost:8080 flask run --port 8000 &
+export FLASK_APP=beachfront/__init__.py
+export FLASK_DEBUG=1
+export STATIC_BASEURL=http://localhost:8079
+
+flask run --port 8080 &
 PIDS[1]=$!
 
-cd beachfront-ui
+cd ui
 npm run dev &
 PIDS[0]=$!
 

@@ -1,9 +1,4 @@
 {
-  "name": "ui",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {},
   "devDependencies": {
     "css-loader": "^0.26.4",
     "file-loader": "^0.10.1",
@@ -13,9 +8,6 @@
   },
   "scripts": {
     "build": "webpack",
-    "dev": "webpack-dev-server --hot"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "dev": "webpack-dev-server --hot --port 8079"
+  }
 }

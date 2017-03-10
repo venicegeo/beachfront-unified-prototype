@@ -1,7 +1,6 @@
 console.assert(sessionStorage.fromOrigin, 'found beacon in sessionStorage')
 
 module.exports.foo = function () {
-
     const xhr = new XMLHttpRequest()
     xhr.open('GET', '/api')
     xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')

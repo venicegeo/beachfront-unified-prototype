@@ -6,7 +6,7 @@ NODE_ENV=production
 rm -f $ARCHIVE_FILE
 
 
-pushd beachfront-ui > /dev/null
+pushd ui > /dev/null
 npm run build
 popd > /dev/null
 
